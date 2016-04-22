@@ -4,34 +4,35 @@
 
 ###1.1 LAN switching technologies
     
-1.1.a Implement and troubleshoot switch administration                    
-1.1.a [i] Managing MAC address table
-1.1.a [ii] errdisable recovery
-1.1.a [iii] L2 MTU
-1.1.b Implement and troubleshoot layer 2 protocols                    
-1.1.b [i] CDP, LLDP
-1.1.b [ii] UDLD
-1.1.c Implement and troubleshoot VLAN                    
-1.1.c [i] access ports
-1.1.c [ii] VLAN database
-1.1.c [iii] normal, extended VLAN, voice VLAN
-1.1.d Implement and troubleshoot trunking                    
-1.1.d [i] VTPv1, VTPv2, VTPv3, VTP pruning
-1.1.d [ii] dot1Q
-1.1.d [iii] Native VLAN
-1.1.d [iv] Manual pruning
-1.1.e Implement and troubleshoot etherchannel                    
-1.1.e [i] LACP, PAgP, manual
-1.1.e [ii] layer 2, layer 3
-1.1.e [iii] load-balancing
-1.1.e [iv] etherchannel misconfiguration guard
-1.1.f Implement and troubleshoot spanning-tree                    
-1.1.f [i] PVST+/RPVST+/MST
-1.1.f [ii] switch priority, port priority, path cost, STP timers
-1.1.f [iii] port fast, BPDUguard, BPDUfilter
-1.1.f [iv] loopguard, rootguard
-1.1.g Implement and troubleshoot other LAN switching technologies                    
-1.1.g [i] SPAN, RSPAN, ERSPAN
+a Implement and troubleshoot switch administration                    
+  a i Managing MAC address table
+  a ii errdisable recovery
+  a iii L2 MTU
+b Implement and troubleshoot layer 2 protocols                    
+  b i CDP, LLDP
+  b i UDLD
+c Implement and troubleshoot VLAN                    
+  c [i] access ports
+  c [ii] VLAN database
+  c [iii] normal, extended VLAN, voice VLAN
+d Implement and troubleshoot trunking                    
+  d [i] VTPv1, VTPv2, VTPv3, VTP pruning
+  d [ii] dot1Q
+  d [iii] Native VLAN
+  d [iv] Manual pruning
+e Implement and troubleshoot etherchannel                    
+  e [i] LACP, PAgP, manual
+  e [ii] layer 2, layer 3
+  e [iii] load-balancing
+  e [iv] etherchannel misconfiguration guard
+f Implement and troubleshoot spanning-tree                    
+  f [i] PVST+/RPVST+/MST
+  f [ii] switch priority, port priority, path cost, STP timers
+  f [iii] port fast, BPDUguard, BPDUfilter
+  f [iv] loopguard, rootguard
+g Implement and troubleshoot other LAN switching technologies                    
+  g [i] SPAN, RSPAN, ERSPAN
+
 
 ### 1.2 Layer 2 Multicast
     
