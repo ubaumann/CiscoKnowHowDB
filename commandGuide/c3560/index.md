@@ -1,0 +1,60 @@
+Catalyst 3560 Switch Software Configuration Guide, Cisco IOS Release 15.0(2)SE and Later
+
+## Book Table of Contents
+- Index
+- Preface
+- Overview
+- Using the Command-Line Interface
+- Assigning the Switch IP Address and Default Gateway
+- Configuring Cisco IOS Configuration Engine
+- Managing Switch Stacks
+- Clustering Switches
+- Administering the Switch
+- Configuring SDM Templates
+- Configuring Switch-Based Authentication
+- Configuring IEEE 802.1x Port-Based Authentication
+- Configuring MACsec Encryption
+- Configuring Web-Based Authentication
+- Configuring Cisco TrustSec
+- Configuring Interface Characteristics
+- Configuring VLANs
+- Configuring VTP
+- Configuring Voice VLAN
+- Configuring Private VLANs
+- Configuring IEEE 802.1Q and Layer 2 Protocol Tunneling
+- Configuring STP
+- Configuring MSTP
+- Configuring Optional Spanning-Tree Features
+- Configuring Resilient Ethernet Protocol
+- Configuring Flex Links and the MAC Address-Table Move Update Feature
+- Configuring DHCP Features and IP Source Guard
+- Configuring Dynamic ARP Inspection
+- Configuring IGMP Snooping and MVR
+- Configuring Port-Based Traffic Control
+- Configuring CDP
+- Configuring LLDP, LLDP-MED, and Wired Location Service
+- Configuring UDLD
+- Configuring SPAN and RSPAN
+- Configuring RMON
+- Configuring System Message Logging and Smart Logging
+- Configuring SNMP
+- Configuring Embedded Event Manager
+- Configuring Network Security with ACLs
+- Configuring QoS
+- Configuring EtherChannels and Link-State Tracking
+- Configuring TelePresence E911 IP Phone Support
+- Configuring IP Unicast Routing
+- Configuring IPv6 Routing
+- Configuring IPv6 ACLs
+- Configuring IPv6 MLD Snooping
+- Configuring HSRP and VRRP
+- Configuring Cisco IOS IP SLAs Operations
+- Configuring Enhanced Object Tracking
+- Configuring Cache Services By Using WCCP
+- Configuring IP Multicast Routing
+- Configuring MSDP
+- Configuring Fallback Bridging
+- Troubleshooting
+- Configuring Online Diagnostics
+- Working with the Cisco IOS File System, Configuration Files, and Software Images
+- Unsupported Commands in Cisco IOS Release 15.0(2)SE
