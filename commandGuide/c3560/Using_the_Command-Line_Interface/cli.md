@@ -94,16 +94,16 @@ Range is from 0 to 256
 
 ## Editing Commands through Keystrokes
 - **Ctrl-B** or left arrow
-Move the cursor back one charecter.
+> Move the cursor back one charecter.
 - **Ctrl-F** or right arrow
-Move the cursor forward one character.
+> Move the cursor forward one character.
 - **Ctrl-A**
-Move the cursor to the beginning of the command line.
+> Move the cursor to the beginning of the command line.
 - **Ctrl-E**
-Move the cursor to the end of the command line.
+> Move the cursor to the end of the command line.
 - **Esc B**
-Move the cursor back one word.
+> Move the cursor back one word.
 - **Esc F**
-Move the cursor forward one word.
+> Move the cursor forward one word.
 - **Ctrl-T**
-Transpose the character to the left of the cursor with the character located at the cursor.
+> Transpose the character to the left of the cursor with the character located at the cursor.
