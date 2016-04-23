@@ -109,13 +109,14 @@ Range is from 0 to 256
 - **Ctrl-T**
   - Transpose the character to the left of the cursor with the character located at the cursor.
 
-### Recall commands from the buffer
+### Recall commands from the delete buffer
 - **Ctrl-Y** 
-  - Recall the most recent entry in the buffer.
-- **Esc Y** Recall the next buffer entry.
+  - Recall the most recent entry in the delete buffer.
+- **Esc Y**
+  - Recall the next delete buffer entry. (Press "Ctrl-Y" first)
 
 ### Delete entries
-- **Delete** or *Backspace*
+- **Delete** or *Backspace* or **Ctrl-H**
   - Erase the character to the left of the cursor.
 - **Ctrl-D**
   - Delete the character at the cursor.
@@ -141,6 +142,8 @@ Range is from 0 to 256
 - **Ctrl-V** or **Esc Q**
   - Designate a particular keystroke as an executable command, perhaps as a shortcut.
 
+> If you want to include a question mark (?) in a command string, you must press Ctrl-V before typing the question mark so you do not inadvertently invoke CLI help.
+
 ### Scroll down
 - **Return**
   - Scroll down one line.
@@ -150,6 +153,9 @@ Range is from 0 to 256
 ### Redisplay 
 - **Ctrl-L** or **Ctrl-R**
   - Redisplaz the current command line.
+
+
+> **Esc can also be performed using Alt**
 
 ## Editing Command Lines that Wrap
 
@@ -164,7 +170,7 @@ Switch(config)# access-list 101 permit tcp 131.108.2.5 255.255.255.0 131.108.1$
 ```
 
 ### Change Screen width
-`Switch# terminal width`
+`Switch# terminal width 80`
 - Default
   - 80
 - Range
