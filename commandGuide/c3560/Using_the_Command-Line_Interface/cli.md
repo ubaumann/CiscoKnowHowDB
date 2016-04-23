@@ -93,6 +93,7 @@ Range is from 0 to 256
 > Re-enable for the current terminal session
 
 ## Editing Commands through Keystrokes
+### Move Around
 - **Ctrl-B** or left arrow
   - Move the cursor back one charecter.
 - **Ctrl-F** or right arrow
@@ -107,3 +108,75 @@ Range is from 0 to 256
   - Move the cursor forward one word.
 - **Ctrl-T**
   - Transpose the character to the left of the cursor with the character located at the cursor.
+
+### Recall commands from the buffer
+- **Ctrl-Y** 
+  - Recall the most recent entry in the buffer.
+- **Esc Y** Recall the next buffer entry.
+
+### Delete entries
+- **Delete** or *Backspace*
+  - Erase the character to the left of the cursor.
+- **Ctrl-D**
+  - Delete the character at the cursor.
+- **Ctrl-K**
+  - Delet all characters form the cursor to the end of the command line.
+- **Ctrl-U** or **Ctrl-X**
+  - Delete all characters form the cursor to the beginning of the command line.
+- **Ctrl-W**
+  - Delete the word to the left of the cursor.
+- **Esc D**
+  - Delete from the cursor to the end of the word.
+
+###Capitaliye or lowercase
+- **Esc C**
+  - Capitalize at the cursor
+- **Esc L**
+  - Lowercase letters from the cursor to the end of the word.
+
+- **Esc U**
+  - Capitaliye letters from the cursor to the end of the word.
+
+### Particular keystroke as an executable command
+- **Ctrl-V** or **Esc Q**
+  - Designate a particular keystroke as an executable command, perhaps as a shortcut.
+
+### Scroll down
+- **Return**
+  - Scroll down one line.
+- **Space**
+  - Scroll down one screen.
+
+### Redisplay 
+- **Ctrl-L** or **Ctrl-R**
+  - Redisplaz the current command line.
+
+## Editing Command Lines that Wrap
+
+### $
+The dollar sign ($) shows that the line has been scrolled.
+```
+Switch(config)# access-list 101 permit tcp 131.108.2.5 255.255.255.0 131.108.1
+Switch(config)# $ 101 permit tcp 131.108.2.5 255.255.255.0 131.108.1.20 255.25
+Switch(config)# $t tcp 131.108.2.5 255.255.255.0 131.108.1.20 255.255.255.0 eq
+Switch(config)# $108.2.5 255.255.255.0 131.108.1.20 255.255.255.0 eq 45
+Switch(config)# access-list 101 permit tcp 131.108.2.5 255.255.255.0 131.108.1$
+```
+
+### Change Screen width
+`Switch# terminal width`
+- Default
+  - 80
+- Range
+  - 0 - 512
+
+## Searching and Filtering
+*command* **|** { **begin** | **include** | **exclude** | **section** } *regular-expression*
+
+```
+Switch# show interfaces | include protocol
+Vlan1 is up, line protocol is up
+Vlan10 is up, line protocol is down
+GigabitEthernet0/1 is up, line protocol is down
+GigabitEthernet0/2 is up, line protocol is up
+```
