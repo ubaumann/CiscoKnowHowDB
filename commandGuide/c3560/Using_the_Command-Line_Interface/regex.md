@@ -41,6 +41,10 @@
 - **^**
   - Caret
   - Specifies the beginning of a line.
+- **$**
+  - end of an input
+  - Matches the character or null string at the end of an input string. 
+  - **123$** matches **0123**, but not 1234
 - **\**
   - Escape character
   - When used with a metacharacter, matches a literal character. For example, **\[** matches the left square bracket.
@@ -65,3 +69,23 @@
 - **\NNN**
   - Escaped octal number
   - Matches an ASCII character as octal (exactly three digits). For example, the character 040 represents a space.
+  
+## Examples
+```sw8262-c#show version | inc [0-9]?\.[0-9]?\(.*\).?
+Cisco IOS Software, C2960C Software (C2960c405ex-UNIVERSALK9-M), Version 15.2(2a)E1, RELEASE SOFTWARE (fc1)
+BOOTLDR: C2960C Boot Loader (C2960C-HBOOT-M) Version 12.2(55r)EX11, RELEASE SOFTWARE (fc1)
+*    1 10    WS-C2960CG-8TC-L          15.2(2a)E1            C2960c405ex-UNIVERSALK9-M```
+
+```sw8262-c#show interfaces status | i ^(Gi|Po)
+Port      Name               Status       Vlan       Duplex  Speed Type
+Gi0/1     Notebook 01        notconnect   122          auto   auto 10/100/1000BaseTX
+Gi0/2     IP-Phone 01        notconnect   127          auto   auto 10/100/1000BaseTX
+Gi0/3     Notebook 02        notconnect   122          auto   auto 10/100/1000BaseTX
+Gi0/4     IP-Phone 02        connected    127        a-full  a-100 10/100/1000BaseTX
+Gi0/5     lab-staging        notconnect   309          auto   auto 10/100/1000BaseTX
+Gi0/6                        disabled     1            auto   auto 10/100/1000BaseTX
+Gi0/7                        disabled     1            auto   auto 10/100/1000BaseTX
+Gi0/8                        disabled     1            auto   auto 10/100/1000BaseTX
+Gi0/9     Link to sw8067     connected    trunk      a-full a-1000 10/100/1000BaseTX
+Gi0/10    Link to sw8067     connected    trunk      a-full a-1000 10/100/1000BaseTX
+Po1       Link to sw8067     connected    trunk      a-full a-1000```
