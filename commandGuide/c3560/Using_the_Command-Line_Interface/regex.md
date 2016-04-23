@@ -16,7 +16,7 @@
   - Question mark
   - A quantifier that indicates that there are 0 or 1 of the previous expression. For example, **lo?se** matches **lse** or **lose**.
   - Note You must enter **Ctrl+V** and then the question mark or else the help function is invoked.
-- ##*##
+- __*__
   - Asterisk
   - A quantifier that indicates that there are 0, 1 or any number of the previous expression. For example, **lo*se** matches **lse**, **lose**, **loose**, and so on.
 - **+**
