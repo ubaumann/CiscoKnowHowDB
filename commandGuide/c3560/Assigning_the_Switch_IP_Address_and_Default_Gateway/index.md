@@ -1,6 +1,9 @@
 # Assigning the Switch IP Address and Default Gateway
+
 > This chapter describes how to create the initial switch configuration (for example, assigning the IP address and default gateway information) for the Catalyst 3560 switch by using a variety of automatic and manual methods. It also describes how to modify the switch startup configuration.
+
 > For IP Version 6 (IPv6) see Chapter “Configuring IPv6 Unicast Routing”. **To enable IPv6, the switch must be running the IP services image.**
+
 ## Understanding the Boot Process
 Normal boot process involves the operation of the boot loader software
 - low-level CPU initialization
@@ -62,7 +65,9 @@ Normal boot process involves the operation of the boot loader software
 	- Specify the path to the text file that describes the path to the image file.
 
 > If the router IP address or the TFTP server name are not found, the switch might send broadcast, instead of unicast, TFTP requests. (255.255.255.255)
+
 > If the configuration file could not be downloaded, the switch attempts to download a configuration file by using various combinations of filenames and TFTP server addresses. The files include the specified configuration filename (if any) and these files: network-config, cisconet.cfg, *hostname*.config, or *hostname*.cfg.
+
 - TFTP files
   - The configuration file named in the DHCP reply (the actual switch configuration file).
   - The network-confg or the cisconet.cfg file (known as the default configuration files).
@@ -105,6 +110,7 @@ Switch(config-if)# end
 This example shows how to configure a switch as a DHCP server so it downloads a configuration file:
 
 > Before following the steps in this table, you **must create a text file** (for example, autoinstall_dhcp) that will be uploaded to the switch. In the text file, put the **name of the image** that you want to download. This **image must be a tar** and not a bin file.
+
 ```
 Switch# config terminal
 Switch(config)# ip dhcp pool pool1
